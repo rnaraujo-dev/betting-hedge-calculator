@@ -6,12 +6,12 @@
 <title>Elevated Bets Hedge Calculator</title>
 
 <!-- Favicon + App Icon -->
-<link rel="icon" type="image/png" href="elevated_bets_logo_favicon?v=1">
-<link rel="apple-touch-icon" sizes="512x512" href="fwm_bets_logo_favicon.png">
+<link rel="icon" type="image/png" href="elevated_bets_logo_favicon.png?v=2">
+<link rel="apple-touch-icon" sizes="512x512" href="elevated_bets_logo_favicon.png">
 
 <!-- PWA -->
 <link rel="manifest" href="manifest.webmanifest">
-<meta name="theme-color" content="#0c0f10">
+<meta name="theme-color" content="#0e1526">
 
 <script>
 if ("serviceWorker" in navigator) {
@@ -21,7 +21,7 @@ if ("serviceWorker" in navigator) {
 
 <style>
     body {
-        background: #0c0f10;
+        background: #0e1526;
         color: #e8e8e8;
         font-family: Arial, sans-serif;
         padding: 20px;
@@ -30,15 +30,15 @@ if ("serviceWorker" in navigator) {
     .container {
         max-width: 850px;
         margin: auto;
-        background: #111517;
+        background: #131c33;
         padding: 30px;
         border-radius: 12px;
-        border: 1px solid #1f2a1f;
+        border: 1px solid #1b76b1;
     }
 
     h1 {
         text-align: center;
-        color: #5AFF00;
+        color: #f5c92a;
         margin-bottom: 25px;
         font-size: 40px;
         font-weight: 800;
@@ -50,7 +50,7 @@ if ("serviceWorker" in navigator) {
         width: 220px;
         height: auto;
         object-fit: contain;
-        filter: drop-shadow(0px 0px 15px #5AFF00FF);
+        filter: drop-shadow(0px 0px 15px #f5c92a80);
     }
 
     .brand-tagline {
@@ -76,17 +76,21 @@ if ("serviceWorker" in navigator) {
         width: 100%;
         padding: 14px;
         border-radius: 6px;
-        border: none;
+        border: 1px solid #1b76b1;
         outline: none;
         font-size: 18px;
         margin-bottom: 22px;
-        background: #1a1f21;
-        color: #5AFF00;
+        background: #0e1526;
+        color: #f5c92a;
+    }
+
+    input:focus {
+        border-color: #f5c92a;
     }
 
     .results-box {
-        background: #001A00;
-        border: 1px solid #09320a;
+        background: #0a1c2e;
+        border: 1px solid #1b76b1;
         border-radius: 10px;
         padding: 18px;
         font-size: 18px;
@@ -97,13 +101,13 @@ if ("serviceWorker" in navigator) {
 
     .results-box span {
         font-weight: bold;
-        color: #5AFF00;
+        color: #f5c92a;
     }
 
     .reset-btn {
         margin-top: 22px;
         width: 160px;
-        background: #5AFF00;
+        background: #f5c92a;
         border: none;
         padding: 14px;
         font-size: 18px;
@@ -113,12 +117,16 @@ if ("serviceWorker" in navigator) {
         display: block;
         margin-left: auto;
         margin-right: auto;
-        color: #000;
+        color: #0e1526;
+    }
+
+    .reset-btn:hover {
+        background: #ffd94a;
     }
 
     .helper-box {
         font-size: 14px;
-        background: #141414;
+        background: #0a1c2e;
         border-radius: 8px;
         padding: 12px;
         margin-top: 18px;
